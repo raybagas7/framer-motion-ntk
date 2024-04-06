@@ -69,7 +69,20 @@ const Home = () => {
         <motion.div
           variants={gridSquareVariant}
           className="bg-slate-800 aspect-square rounded-lg justify-center flex items-center gap-10"
-        ></motion.div>
+        >
+          <motion.button
+            whileTap={{ scale: 0.8 }}
+            whileHover={{
+              scale: 1.2,
+              backgroundColor: '#e2e2e2',
+              color: 'black',
+            }}
+            transition={{ bounceDamping: 10, bounceStiffness: 600 }}
+            className="bg-emerald-600 w-1/2 py-4 rounded-lg text-2xl text-gray-100 font-light tracking-wide"
+          >
+            Click Me!
+          </motion.button>
+        </motion.div>
         <motion.div
           variants={gridSquareVariant}
           className="bg-slate-800 aspect-square rounded-lg justify-center flex items-center gap-10"
